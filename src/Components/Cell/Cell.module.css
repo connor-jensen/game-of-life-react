@@ -1,0 +1,11 @@
+.Alive {
+   background: #FF5400;
+}
+ 
+.Newborn {
+   background: #FFBF00;
+}
+
+td:hover:not(.Alive):not(.Newborn) {
+   background: #DDD;
+}
