@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import styled from "styled-components";
 import { toggleAlive, step } from "../../features/game/gameSlice"
 import Cell from "../Cell/Cell"
 
@@ -7,7 +8,7 @@ const Board = (props) => {
    const dispatch = useDispatch();
    
    return (
-      <div>
+      <>
          <table>
             <tbody>
                {props.board.map((row, i) => {
@@ -28,7 +29,7 @@ const Board = (props) => {
                })}
             </tbody>
          </table>
-      </div>
+      </>
    );
 };
 
